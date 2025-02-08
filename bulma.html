@@ -28,6 +28,18 @@
 
         });
     </script>
+
+    <style>
+        :root{
+            --bulma-primary: hsl(16.1,100%,65.7%);
+            
+        }
+
+        .has-background-primary{
+            background-color: var(--bulma-primary)
+            !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -109,9 +121,9 @@
           </section>
 
           <section class="container">
-            <section>
-                <div class="columns is-3">
-                    <div class="column">
+            <section class="my-4 px-4">
+                <div class="columns is-mobile is-multiline is-centered is-5">
+                    <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
                         <div class="card">
                             <div class="card-image">
                             <figure class="image is-4by3">
@@ -147,7 +159,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
                         <div class="card">
                             <div class="card-image">
                             <figure class="image is-4by3">
@@ -183,7 +195,7 @@
                             </div>
                         </div>
                     </div>  
-                    <div class="column">
+                    <div class="column is-full-mobile is-half-tablet is-one-quarter-desktop">
                         <div class="card">
                             <div class="card-image">
                             <figure class="image is-4by3">
@@ -221,8 +233,39 @@
                     </div>
                 </div>
             </section>
-
+            <!--Sección de texto a la derecha y image en la izquierda-->
+            <section>
+                <div class="columns is-mobile is-multiline is-flex is-vcentered is-centered is-flex-direction-row-reverse is-gapless has-background-primary">
+                    <div class="column is-full-mobile is-half-tablet has-text-white">
+                        <div class="px-4">
+                            <h2 class="is-size-4">Summary for a Product</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tempore illum quo magnam possimus beatae inventore omnis ad, molestias minus corrupti, voluptatibus minima totam vel! Veniam, voluptas? Architecto, labore nesciunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat consectetur, necessitatibus fugit deserunt provident asperiores porro, error qui velit optio ipsam cum voluptatum exercitationem nulla officia harum incidunt saepe?</p>
+                        </div>
+                    </div>
+                    <div class="column is-full-mobile is-half-tablet">
+                        <picture>
+                            <source srcset="https://picsum.photos/id/187/720/720" media="(min-width=769px)">
+                            <img style="width: 100%;object-fit: cover;" src="https://picsum.photos/id/187/480/480" alt="Half Image Content">
+                        </picture>
+                    </div>
+                </div>
+            </section> 
           </section>
       </main>
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+            The source code is licensed
+            <a href="https://opensource.org/license/mit">MIT</a>. The
+            website content is licensed
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+              >CC BY NC SA 4.0</a
+            >.
+          </p>
+        </div>
+      </footer>
 </body>
 </html>
